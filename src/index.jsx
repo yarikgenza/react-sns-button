@@ -5,15 +5,20 @@ import ReactSNSButtonStyled from './ReactSNSButtonStyled';
 
 const propTypes = {
   label: PropTypes.string.isRequired,
+  styleBackgroundColor: PropTypes.string,
+  styleColor: PropTypes.string,
   renderIcon: PropTypes.func.isRequired,
 };
 
-const defaultProps = {};
+const defaultProps = {
+  styleBackgroundColor: 'transparent',
+  styleColor: '#FFFFFF',
+};
 
-const ReactSNSButton = ({ label, renderIcon, ...props }) => (
-  <ReactSNSButtonStyled {...props} >
-    {React.cloneElement(renderIcon(), { color: '#FFF', size: 30, style: { padding: 5 } })}
-    <Label>
+const ReactSNSButton = ({ styleBackgroundColor, styleColor, label, renderIcon, ...props }) => (
+  <ReactSNSButtonStyled styleBackgroundColor={styleBackgroundColor} {...props} >
+    {React.cloneElement(renderIcon(), { color: styleColor, size: 30, style: { padding: 5 } })}
+    <Label styleColor={styleColor} >
       {label}
     </Label>
   </ReactSNSButtonStyled>

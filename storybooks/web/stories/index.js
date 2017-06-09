@@ -4,6 +4,7 @@ import IconLinkedin from 'binary-ui-icons/binary/Linkedin';
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import ReactSNSButton from 'react-sns-button';
+import ReactSNSButtonLabel from 'react-sns-button/Label';
 
 storiesOf('Buttons', module)
   .add('facebook', () => (
@@ -28,4 +29,9 @@ storiesOf('Buttons', module)
       style={{ backgroundColor: '#1278B3' }}
       renderIcon={() => <IconLinkedin />}
     />
+  ));
+
+storiesOf('Buttons Label', module)
+  .add('black', () => (
+    <ReactSNSButtonLabel styleColor="black" >Default</ReactSNSButtonLabel>
   ));
