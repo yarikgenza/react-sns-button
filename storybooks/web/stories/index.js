@@ -12,24 +12,24 @@ setAddon(infoAddon);
 storiesOf('Buttons', module)
   .addWithInfo('facebook', () => (
     <ReactSNSButton
+      styleBackgroundColor="#4267b2"
       label="Facebook"
-      style={{ backgroundColor: '#4267b2' }}
       renderIcon={() => <IconFacebook />}
       onClick={() => { console.log('Facebook'); }}
     />
   ))
   .addWithInfo('google', () => (
     <ReactSNSButton
+      styleBackgroundColor="#F4511E"
       label="Google"
-      style={{ backgroundColor: '#F4511E' }}
       renderIcon={() => <IconGoogle />}
       onClick={() => { console.log('Google'); }}
     />
   ))
   .addWithInfo('Linkedin', () => (
     <ReactSNSButton
+      styleBackgroundColor="#1278B3"
       label="Linkedin"
-      style={{ backgroundColor: '#1278B3' }}
       renderIcon={() => <IconLinkedin />}
     />
   ));
