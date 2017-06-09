@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@kadira/react-storybook-addon-info@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@kadira/react-storybook-addon-info/-/react-storybook-addon-info-3.4.0.tgz#f603dba8750f93318c33aa96f1e7bdfeeb61b7b0"
+  dependencies:
+    babel-runtime "^6.5.0"
+    markdown-to-react-components "^0.2.1"
+    react-addons-create-fragment "^15.3.2"
+
 abab@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -654,7 +662,7 @@ babel-register@^6.24.1:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.5.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b"
   dependencies:
@@ -699,8 +707,8 @@ babel@^6.23.0:
   resolved "https://registry.yarnpkg.com/babel/-/babel-6.23.0.tgz#d0d1e7d803e974765beea3232d4e153c0efb90f4"
 
 babylon@^6.17.0, babylon@^6.17.2:
-  version "6.17.2"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.2.tgz#201d25ef5f892c41bae49488b08db0dd476e9f5c"
+  version "6.17.3"
+  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.3.tgz#1327d709950b558f204e5352587fd0290f8d8e48"
 
 balanced-match@^0.4.1:
   version "0.4.2"
@@ -1689,6 +1697,10 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
+he@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
+
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
@@ -2207,6 +2219,17 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
+markdown-to-react-components@^0.2.1:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/markdown-to-react-components/-/markdown-to-react-components-0.2.4.tgz#e2854edc4ff0fe9e360282e8b1c3e5637d57c3db"
+  dependencies:
+    he "^1.1.0"
+    marked "^0.3.3"
+
+marked@^0.3.3:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
+
 micromatch@^2.1.5:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-2.3.11.tgz#86677c97d1720b363431d04d0d15293bd38c1565"
@@ -2599,6 +2622,14 @@ rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-addons-create-fragment@^15.3.2:
+  version "15.5.4"
+  resolved "https://registry.yarnpkg.com/react-addons-create-fragment/-/react-addons-create-fragment-15.5.4.tgz#048acb2f332a3f450beae0be66824ed91e66e122"
+  dependencies:
+    fbjs "^0.8.4"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.0"
 
 react-addons-test-utils@~15.3.2:
   version "15.3.2"

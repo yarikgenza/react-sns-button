@@ -2,12 +2,15 @@ import IconGoogle from 'binary-ui-icons/binary/Google';
 import IconFacebook from 'binary-ui-icons/binary/Facebook';
 import IconLinkedin from 'binary-ui-icons/binary/Linkedin';
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import infoAddon from '@kadira/react-storybook-addon-info';
+import { storiesOf, setAddon } from '@kadira/storybook';
 import ReactSNSButton from 'react-sns-button';
 import ReactSNSButtonLabel from 'react-sns-button/Label';
 
+setAddon(infoAddon);
+
 storiesOf('Buttons', module)
-  .add('facebook', () => (
+  .addWithInfo('facebook', () => (
     <ReactSNSButton
       label="Facebook"
       style={{ backgroundColor: '#4267b2' }}
@@ -15,7 +18,7 @@ storiesOf('Buttons', module)
       onClick={() => { console.log('Facebook'); }}
     />
   ))
-  .add('google', () => (
+  .addWithInfo('google', () => (
     <ReactSNSButton
       label="Google"
       style={{ backgroundColor: '#F4511E' }}
@@ -23,7 +26,7 @@ storiesOf('Buttons', module)
       onClick={() => { console.log('Google'); }}
     />
   ))
-  .add('Linkedin', () => (
+  .addWithInfo('Linkedin', () => (
     <ReactSNSButton
       label="Linkedin"
       style={{ backgroundColor: '#1278B3' }}
@@ -32,6 +35,6 @@ storiesOf('Buttons', module)
   ));
 
 storiesOf('Buttons Label', module)
-  .add('black', () => (
+  .addWithInfo('black', () => (
     <ReactSNSButtonLabel styleColor="black" >Default</ReactSNSButtonLabel>
   ));
