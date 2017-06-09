@@ -1,39 +1,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Label from './Label';
+import ReactSNSButtonStyled from './ReactSNSButtonStyled';
 
 const propTypes = {
   label: PropTypes.string.isRequired,
-  style: PropTypes.object,
   renderIcon: PropTypes.func.isRequired,
 };
 
-const defaultProps = {
-  style: undefined,
-};
+const defaultProps = {};
 
-const ReactSNSButton = ({ label, style, renderIcon, ...props }) => (
-  <div
-    style={Object.assign({}, style, {
-      alignItems: 'center',
-      borderRadius: 4,
-      display: 'flex',
-      height: 'fit-content',
-      cursor: 'pointer',
-      width: 'fit-content',
-    })}
-    {...props}
-  >
-    {React.cloneElement(renderIcon(), {
-      color: '#FFF',
-      size: 30,
-      style: { padding: 5 },
-      ...props,
-    })}
+const ReactSNSButton = ({ label, renderIcon, ...props }) => (
+  <ReactSNSButtonStyled {...props} >
+    {React.cloneElement(renderIcon(), { color: '#FFF', size: 30, style: { padding: 5 } })}
     <Label>
       {label}
     </Label>
-  </div>
+  </ReactSNSButtonStyled>
 );
 
 ReactSNSButton.propTypes = propTypes;
