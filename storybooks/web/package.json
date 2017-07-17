@@ -9,6 +9,6 @@
   "dependencies": {},
   "devDependencies": {
     "@storybook/react": "^3.1.9",
-    "webpack": "^2.7.0"
+    "@storybook/addon-info": "^3.1.9"
   }
 }
