@@ -26,7 +26,7 @@ storiesOf('Buttons', module)
       onClick={() => { console.log('Google'); }}
     />
   ))
-  .addWithInfo('Linkedin', () => (
+  .addWithInfo('linkedin', () => (
     <ReactSNSButton
       styleBackgroundColor="#1278B3"
       label="Linkedin"
