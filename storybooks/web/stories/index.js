@@ -2,8 +2,8 @@ import IconGoogle from 'binary-ui-icons/binary/Google';
 import IconFacebook from 'binary-ui-icons/binary/Facebook';
 import IconLinkedin from 'binary-ui-icons/binary/Linkedin';
 import React from 'react';
-import infoAddon from '@kadira/react-storybook-addon-info';
-import { storiesOf, setAddon } from '@kadira/storybook';
+import infoAddon from '@storybook/addon-info';
+import { storiesOf, setAddon } from '@storybook/react';
 import ReactSNSButton from 'react-sns-button';
 import ReactSNSButtonLabel from 'react-sns-button/Label';
 

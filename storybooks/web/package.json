@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ../../docs"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {},
   "devDependencies": {
-    "@kadira/storybook": "^2.21.0"
+    "@storybook/react": "^3.1.9",
+    "webpack": "^2.7.0"
   }
 }
